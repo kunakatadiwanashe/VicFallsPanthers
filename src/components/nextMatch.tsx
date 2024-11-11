@@ -11,7 +11,7 @@ const NextMatch = () => {
                 </div>
                 <div className="flex items-center">
                     <i className="fas fa-bolt text-red-500 mr-2"></i>
-                    <h1 className="text-2xl md:text-3xl font-bold">TODAY'S BASKETBALL MATCHES</h1>
+                    <h1 className="text-2xl md:text-3xl font-bold">TODAY S BASKETBALL MATCHES</h1>
                 </div>
             </div>
             <div className="flex flex-col md:flex-row">
