@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import logo from "../assets/logo.png";
 import BannerSlide from "./BannerSlide";
+import Navbar from "./Navbar";
 
 
 // style={{ backgroundImage: `url(${bg.src})` }}
@@ -10,7 +11,8 @@ import BannerSlide from "./BannerSlide";
 const Banner = () => {
     return (
         <div className="min-h-screen overflow-x-hidden bg-cover bg-center" >
-            <header className="flex flex-col md:flex-row justify-between items-center p-4 md:p-6">
+
+            {/* <header className="flex flex-col md:flex-row justify-between items-center p-4 md:p-6">
                 <div className="flex items-center mb-4 md:mb-0">
                     <Image src={logo} alt="logo" className="mr-2 w-[60px] md:w-[80px]" />
                 </div>
@@ -21,7 +23,8 @@ const Banner = () => {
                     <a href="#" className="hover:text-[#08645d]">Page</a>
                     <a href="#" className="hover:text-[#08645d]">Contact Us</a>
                 </nav>
-            </header>
+            </header> */}
+            <Navbar />
 
             <main className="flex flex-col items-center md:flex-row md:items-center md:justify-between p-4 md:p-12 lg:p-0">
                 <div className="w-full md:w-[50%] p-4 md:p-16 pt-10 md:pt-40 lg:pt-4 text-[#118985] text-center md:text-left">
