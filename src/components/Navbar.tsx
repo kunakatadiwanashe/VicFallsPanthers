@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <>
     <div className="navbar bg-base-100 flex justify-between">
-  <div className="navbar-start">
+  <div className="navbar-start flex justify-between md:justify-start w-[100vw]">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
         <svg
