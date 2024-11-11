@@ -29,7 +29,7 @@ const Gallery = () => {
           <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/uJs693eNfuQ"
+            src="https://www.youtube.com/embed/XdQcjOi85FY"
             title="Men's Basketball Gold Medal Match 🏀 | Full Replay | Paris Replays"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
