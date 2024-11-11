@@ -35,9 +35,9 @@ const PlayerStats2 = () => {
     <div className="flex flex-wrap h-auto min-h-[100vh]">
       <h2 className="pr-4 md:pr-28 pt-12 text-3xl font-bold w-full text-right">Players Statistics</h2>
 
-      <div className="carousel carousel-center rounded-box p-4 w-full md:w-[65vw] h-auto md:h-[60vh] overflow-hidden">
+      <div className="carousel carousel-center rounded-box p-4 w-full md:w-[65vw] h-[60vh] md:h-[60vh] overflow-hidden">
         {players.map((player, index) => (
-          <div key={index} className={`carousel-item w-full md:w-[60vw] h-auto md:h-[70vh] relative ${activeIndex === index ? 'block' : 'hidden'}`}>
+          <div key={index} className={`carousel-item w-full md:w-[60vw] h-[65vh] md:h-[70vh] relative ${activeIndex === index ? 'block' : 'hidden'}`}>
             <Image
               src={ball}
               fill={true}

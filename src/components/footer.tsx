@@ -7,7 +7,7 @@ import { AiFillTikTok } from "react-icons/ai";
 
 const Footer = () => {
     return (
-        <footer className="bg-black text-white py-10">
+        <footer className="bg-black text-white py-10 text-center md:text-left">
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
                     <div className='text-white flex flex-col items-center'>
@@ -51,8 +51,8 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div>
-                        <h2 className="font-bold text-lg mb-4">Have a Questions?</h2>
-                        <ul>
+                        <h2 className="font-bold text-lg mb-4 text-center">Have a Questions?</h2>
+                        <ul className='flex justify-center flex-wrap'>
                             <li className="mb-2 flex items-center"><i className="fas fa-map-marker-alt mr-2"></i>Victoria Falls, Zimbabwe</li>
                             <li className="mb-2 flex items-center"><i className="fas fa-phone mr-2"></i>+2 392 3929 210</li>
                             <li className="mb-2 flex items-center"><i className="fas fa-envelope mr-2"></i>info@vicfallspanther</li>

@@ -18,8 +18,9 @@ const BoysTeam = () => {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-                <div className="shadow-2xl text-center h-[55vh]">
-                    <Image src={sasha} alt="Player 1" className="w-full h-[100%] mb-4" />
+
+                <div className="shadow-2xl text-center h-[55vh] pb-20 md:pb-0">
+                    <Image src={sasha} alt="Player 1" className="w-full h-[100%] mb-4 object-contain mb:object-cover" />
                     <div className="relative">
                         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-4 py-2">
                             #11
@@ -29,8 +30,8 @@ const BoysTeam = () => {
                     <p className="text-gray-400">P.G / P.F</p>
                 </div>
 
-                <div className="shadow-2xl text-center h-[55vh] border">
-                    <Image src={kun} alt="Player 2" className="w-full h-[100%] mb-4" />
+                <div className="shadow-2xl text-center h-[55vh] border pb-20 md:pb-0">
+                    <Image src={kun} alt="Player 2" className="w-full h-[100%] mb-4 object-contain mb:object-cover" />
                     <div className="relative">
                         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-4 py-2">
                             #11
@@ -40,8 +41,8 @@ const BoysTeam = () => {
                     <p className="text-gray-400">P.G / P.F</p>
                 </div>
 
-                <div className="shadow-2xl text-center h-[55vh] border">
-                    <Image src={shawn} alt="Player 3" className="w-full h-[100%] mb-4" />
+                <div className="shadow-2xl text-center h-[55vh] border pb-20 md:pb-0">
+                    <Image src={shawn} alt="Player 3" className="w-full h-[100%] mb-4 object-contain mb:object-cover" />
                     <div className="relative">
                         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-4 py-2">
                             #11
@@ -51,8 +52,8 @@ const BoysTeam = () => {
                     <p className="text-gray-400">P.G / P.F</p>
                 </div>
 
-                <div className="shadow-2xl text-center h-[55vh] border">
-                    <Image src={lence} alt="Player 4" className="w-full h-[100%] mb-4" />
+                <div className="shadow-2xl text-center h-[55vh] border pb-20 md:pb-0">
+                    <Image src={lence} alt="Player 4" className="w-full h-[100%] mb-4 object-contain mb:object-cover" />
                     <div className="relative">
                         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-4 py-2">
                             #11
