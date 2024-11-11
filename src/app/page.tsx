@@ -6,6 +6,12 @@ import PlayerStats2 from '../components/playerStats2';
 import BoysTeam from "@/components/boysTeam";
 import NextMatch from "@/components/nextMatch";
 import Banner from "@/components/Banner";
+import GamesPlayed from "../components/gamesplayed";
+import FunClub from "@/components/joinFanClub";
+import Gallery from "@/components/Gallery";
+
+
+
 
 
 export default function Home() {
@@ -15,7 +21,9 @@ export default function Home() {
   <NextMatch />
   <BoysTeam />
   <PlayerStats2 />
-  {/* <FunClub /> */}
+  <Gallery />
+  <FunClub />
+ <GamesPlayed />
 <Footer />
 </div>
   );

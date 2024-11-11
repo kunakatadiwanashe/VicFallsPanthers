@@ -1,65 +1,44 @@
-import React from 'react';
+"use client"
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
-import  img1 from '../assets/sld/1.png'
-import  img2 from '../assets/sld/2.png'
-import  img3 from '../assets/sld/3.png'
-import  img4 from '../assets/sld/4.png'
+import Img1 from '../assets/sld/1.png'
+import Img2 from '../assets/sld/2.png'
+import Img3 from '../assets/sld/3.png'
+import Img4 from '../assets/kun.png'
 
+const BannerSlider = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const slideCount = 4; // Number of slides
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % slideCount);
+    }, 3000); // Adjust the interval time for sliding (3000 ms = 3 seconds)
+    return () => clearInterval(interval);
+  }, [slideCount]);
 
-
-
-
-const BannerSlide = () => {
   return (
-    <div className="carousel carousel-center  rounded-box max-w-md space-x-4 p-4" >
-      <div className="carousel-item">
-        <Image
-          src={img1}   className="rounded-box"
-          alt="Banner Image"
-          width={400} // Specify width
-          height={300} // Specify height
-        />
+    <div className="carousel w-[100vw]  h-[78vh]"> {/* Updated height here */}
+      
+      <div className={`carousel-item ${activeIndex === 0 ? 'block' : 'hidden'}`}>
+        <Image src={Img1} className="w-[50vw] h-[80vh] object-cover object-top" alt="Slide 1" /> {/* Updated height here */}
       </div>
 
-      <div className="carousel-item">
-        <Image
-          src={img2}   className="rounded-box"
-          alt="Banner Image"
-          width={400} // Specify width
-          height={300} // Specify height
-        />
+      <div className={`carousel-item ${activeIndex === 1 ? 'block' : 'hidden'}`}>
+        <Image src={Img2} className="w-[50vw] h-[80vh] object-cover object-top" alt="Slide 2" /> {/* Updated height here */}
       </div>
 
-
-      <div className="carousel-item">
-        <Image
-          src={img3}   className="rounded-box"
-          alt="Banner Image"
-          width={400} // Specify width
-          height={300} // Specify height
-        />
+      <div className={`carousel-item ${activeIndex === 2 ? 'block' : 'hidden'}`}>
+        <Image src={Img3} className="w-[50vw] h-[80vh] object-cover object-top" alt="Slide 3" /> {/* Updated height here */}
       </div>
 
-
-      <div className="carousel-item">
-        <Image
-          src={img4}   className="rounded-box"
-          alt="Banner Image"
-          width={400} // Specify width
-          height={300} // Specify height
-        />
+      <div className={`carousel-item ${activeIndex === 3 ? 'block' : 'hidden'}`}>
+        <Image src={Img4} className="w-[50vw] h-[80vh] object-cover object-top" alt="Slide 4" /> {/* Updated height here */}
       </div>
-
-
-
-
-
+      
     </div>
   );
 };
 
-
-
-export default BannerSlide;
+export default BannerSlider;

@@ -1,18 +1,27 @@
-import React from 'react'
+import React from 'react';
 import Image from 'next/image';
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.png';
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { AiFillTikTok } from "react-icons/ai";
 
 const Footer = () => {
     return (
         <footer className="bg-black text-white py-10">
             <div className="container mx-auto px-4">
-                <div className="grid grid-cols-5 gap-8">
-                    <div>
-                           <Image src={logo} alt="logo" width={200} height={100} />
-                        <div className="flex space-x-4">
-                            <a href="#" className="text-black bg-green-500 p-2 rounded-full"><i className="fab fa-twitter"></i></a>
-                            <a href="#" className="text-black bg-green-500 p-2 rounded-full"><i className="fab fa-facebook-f"></i></a>
-                            <a href="#" className="text-black bg-green-500 p-2 rounded-full"><i className="fab fa-instagram"></i></a>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                    <div className='text-white flex flex-col items-center'>
+                        <Image src={logo} alt="logo" width={200} height={100} />
+                        <div className="flex text-center justify-evenly mt-4">
+                            <a href="#" className="bg-[#118985] p-2 rounded-full">
+                                <FaFacebook />
+                            </a>
+                            <a href="#" className="bg-[#118985] p-2 rounded-full mx-4">
+                                <FaInstagramSquare />
+                            </a>
+                            <a href="#" className="bg-[#118985] p-2 rounded-full">
+                                <AiFillTikTok />
+                            </a>
                         </div>
                     </div>
                     <div>
@@ -44,26 +53,18 @@ const Footer = () => {
                     <div>
                         <h2 className="font-bold text-lg mb-4">Have a Questions?</h2>
                         <ul>
-                            <li className="mb-2 flex items-center"><i className="fas fa-map-marker-alt mr-2"></i>VIctoria Falls Zimbabwe</li>
+                            <li className="mb-2 flex items-center"><i className="fas fa-map-marker-alt mr-2"></i>Victoria Falls, Zimbabwe</li>
                             <li className="mb-2 flex items-center"><i className="fas fa-phone mr-2"></i>+2 392 3929 210</li>
                             <li className="mb-2 flex items-center"><i className="fas fa-envelope mr-2"></i>info@vicfallspanther</li>
                         </ul>
                     </div>
                 </div>
                 <div className="text-center mt-10">
-                    <p>Copyright ©2024 All rights reserved  <i className="fas fa-heart text-red-500"></i> by VicFalls Panthers</p>
+                    <p>Copyright ©2024 All rights reserved <i className="fas fa-heart text-red-500"></i> by VicFalls Panthers</p>
                 </div>
             </div>
         </footer>
     );
 };
 
-
-
-export default Footer
-
-
-
-
-
-
+export default Footer;

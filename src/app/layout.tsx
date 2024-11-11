@@ -5,12 +5,12 @@ import "./globals.css";
 
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: "./fonts/Rubik-Italic-VariableFont_wght.ttf",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+  src: "./fonts/Rubik-VariableFont_wght.ttf",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
