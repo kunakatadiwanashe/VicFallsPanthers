@@ -1,7 +1,7 @@
 import React from "react";
-import Image from "next/image";
 
-import logo from "../assets/logo.png";
+
+
 import BannerSlide from "./BannerSlide";
 import Navbar from "./Navbar";
 
@@ -12,18 +12,7 @@ const Banner = () => {
     return (
         <div className="min-h-screen overflow-x-hidden bg-cover bg-center" >
 
-            {/* <header className="flex flex-col md:flex-row justify-between items-center p-4 md:p-6">
-                <div className="flex items-center mb-4 md:mb-0">
-                    <Image src={logo} alt="logo" className="mr-2 w-[60px] md:w-[80px]" />
-                </div>
-                <nav className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-lg md:text-xl font-bold text-black">
-                    <a href="#" className="hover:text-[#08645d]">Home</a>
-                    <a href="#" className="hover:text-[#08645d]">About</a>
-                    <a href="#" className="hover:text-[#08645d]">Match Event</a>
-                    <a href="#" className="hover:text-[#08645d]">Page</a>
-                    <a href="#" className="hover:text-[#08645d]">Contact Us</a>
-                </nav>
-            </header> */}
+
             <Navbar />
 
             <main className="flex flex-col items-center md:flex-row md:items-center md:justify-between p-4 md:p-12 lg:p-0">
@@ -35,7 +24,7 @@ const Banner = () => {
                         Premier Amateur Basketball Club in Victoria Falls, Zimbabwe
                         affiliated to the Matabeleland North Basketball League.
                     </p>
-                    <button className="bg-[#118985] text-white px-4 py-2 md:px-6 md:py-3 rounded">
+   5:30                 <button className="bg-[#118985] text-white px-4 py-2 md:px-6 md:py-3 rounded">
                         Get Started →
                     </button>
                 </div>

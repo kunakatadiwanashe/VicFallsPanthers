@@ -27,13 +27,13 @@ export default function Navbar() {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                
+
                     <a href="#" className="hover:text-[#08645d]">Home</a>
                     <a href="#" className="hover:text-[#08645d]">About</a>
                     <a href="#" className="hover:text-[#08645d]">Match Event</a>
                     <a href="#" className="hover:text-[#08645d]">Page</a>
                     <a href="#" className="hover:text-[#08645d]">Contact Us</a>
-               
+
       </ul>
     </div>
     <div className="flex items-center mb-4 md:mb-0">
