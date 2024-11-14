@@ -4,7 +4,7 @@ import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Navbar from "@/components/Navbar";
 
-import kun from "../../../assets/mishy.jpg";
+import kun from "../../../assets/kun.png";
 
 const players = [
   {
