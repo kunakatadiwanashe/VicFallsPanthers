@@ -8,6 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        myLocalFont: ['var(--joy)'],
+        myLocalFont2: ['var(--para)'],
+        
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

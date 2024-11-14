@@ -3,7 +3,7 @@ import React from "react";
 import BannerSlide from "./BannerSlide";
 import Navbar from "./Navbar";
 
-// style={{ backgroundImage: `url(${bg.src})` }}
+
 
 const Banner = () => {
   return (
@@ -12,7 +12,7 @@ const Banner = () => {
 
       <main className="flex flex-col items-center md:flex-row md:items-center md:justify-between p-4 md:p-12 lg:p-0">
         <div className="w-full md:w-[50%] p-4 md:p-16 pt-10 md:pt-40 lg:pt-4 text-[#118985] text-center md:text-left">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-2xl">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-2xl">
             Victoria Falls Panthers Basketball
           </h1>
           <p className="mb-6 text-lg md:text-xl text-black">

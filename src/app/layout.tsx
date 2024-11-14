@@ -4,15 +4,15 @@ import "./globals.css";
 
 
 
-const geistSans = localFont({
+const para = localFont({
   src: "./fonts/Rubik-Italic-VariableFont_wght.ttf",
-  variable: "--font-geist-sans",
+  variable: "--para",
   weight: "100 900",
 });
-const geistMono = localFont({
-  src: "./fonts/Rubik-VariableFont_wght.ttf",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const joy = localFont({
+  src: './fonts/Joyride W05 STD.woff',
+  variable: '--joy',
 });
 
 export const metadata: Metadata = {
@@ -54,10 +54,11 @@ export default function RootLayout({
     <html lang="en">
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      className={`${joy.variable} ${para.variable}`}
       >
         {children}
       </body>
     </html>
   );
 }
+
