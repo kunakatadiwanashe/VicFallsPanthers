@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import logo from '../assets/logo.png'; // Ensure you have different logos if needed
-import bg from '../assets/bg.png';
+import bg from '../assets/bgg.jpg';
 
 const FunClub = () => {
     return (

@@ -9,6 +9,9 @@ import Banner from "@/components/Banner";
 import GamesPlayed from "../components/gamesplayed";
 import FunClub from "@/components/joinFanClub";
 import Gallery from "@/components/Gallery";
+import SocialMedia from "@/components/SocialMedia";
+
+
 
 
 
@@ -21,6 +24,7 @@ export default function Home() {
   <NextMatch />
   <BoysTeam />
   <PlayerStats2 />
+  {/* <SocialMedia /> */}
   <Gallery />
   <FunClub />
  <GamesPlayed />

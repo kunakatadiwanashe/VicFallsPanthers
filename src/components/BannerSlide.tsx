@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 import Img1 from '../assets/sld/1.png'
 import Img2 from '../assets/sld/2.png'
-import Img3 from '../assets/sld/3.png'
+import Img3 from '../assets/kun.png'
 import Img4 from '../assets/kun.png'
 
 const BannerSlider = () => {

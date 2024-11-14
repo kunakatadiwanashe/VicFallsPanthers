@@ -3,7 +3,7 @@ import nxt from '../assets/suns.jpg';
 
 const NextMatch = () => {
     return (
-        <div className="container p-4 md:p-10 h-auto md:h-[90vh] bg-black text-white">
+        <div className="container p-4 md:p-10 h-auto md:h-[90vh] bg-black text-white" id='match'>
             <div className="flex flex-col md:flex-row justify-between items-center mb-8">
                 <div className="flex items-center mb-4 md:mb-0">
                     <i className="fas fa-bolt text-red-500 mr-2"></i>
