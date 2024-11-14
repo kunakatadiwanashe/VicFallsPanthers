@@ -24,7 +24,7 @@ export default function Home() {
   <NextMatch />
   <BoysTeam />
   <PlayerStats2 />
-  {/* <SocialMedia /> */}
+  <SocialMedia />
   <Gallery />
   <FunClub />
  <GamesPlayed />
