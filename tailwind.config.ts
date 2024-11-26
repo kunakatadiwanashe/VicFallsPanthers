@@ -11,6 +11,7 @@ const config: Config = {
       fontFamily: {
         myLocalFont: ['var(--joy)'],
         myLocalFont2: ['var(--para)'],
+        myLocalFont3: ['var(--mon)'],
         
       },
       colors: {

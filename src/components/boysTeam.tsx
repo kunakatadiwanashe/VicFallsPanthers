@@ -1,10 +1,12 @@
 "use client"
-
 import Image from "next/image";
+
 import kun from "../assets/kun.png";
 import sasha from "../assets/sasha.png";
-import shawn from "../assets/shwan.png";
-import lence from "../assets/lence.png";
+import munashe from "../assets/man/munashe.JPG";
+import tk from "../assets/man/tk.JPG";
+
+
 import { useRouter } from 'next/navigation';
 import Link from "next/link";
 
@@ -26,11 +28,41 @@ const PlayerCard = ({ imageSrc, altText, playerName, position, number }) => {
 const BoysTeam = () => {
     const router = useRouter(); // Initialize useRouter
     const players = [
-        { image: sasha, name: "Tadiwanashe Kunaka", position: "P.G / P.F", number: 5 },
-        { image: kun, name: "Tadiwanashe Kunaka", position: "P.G / P.F", number: 11 },
-        { image: shawn, name: "Tadiwanashe Kunaka", position: "P.G / P.F", number: 10 },
-        { image: lence, name: "Tadiwanashe Kunaka", position: "P.G / P.F", number: 14 },
-        { image: lence, name: "Tadiwanashe Kunaka", position: "P.G / P.F", number: 1 },
+        {
+            name: "Sasha Sasha",
+            position: "CENTER-FORWARD",
+            number: 13,
+            image: kun,
+            alt: "Player Bam Adebayo",
+          },
+          {
+            name: "Tadiwanashe Kunaka",
+            position: "CENTER/SF",
+            number: 11,
+            image: kun,
+            alt: "Player Thomas Bryant",
+          },
+          {
+            name: "Danny Danny",
+            position: "GUARD",
+            number: 18,
+            image: tk,
+            alt: "Player Alec Burks",
+          },
+          {
+            name: "Shawn Shawn",
+            position: "GUARD",
+            number: 18,
+            image: munashe,
+            alt: "Player Alec Burks",
+          },
+          {
+            name: "Chitinhe Emmanuel",
+            position: "Point Guard",
+            number: 5,
+            image: sasha, // You can replace with an actual image if available
+            alt: "Player Chitinhe Emmanuel",
+          },
     ];
 
     return (

@@ -35,6 +35,139 @@ const players = [
     image: kun,
     alt: "Player Alec Burks",
   },
+  {
+    name: "Chitinhe Emmanuel",
+    position: "Forward",
+    number: 1,
+    image: kun, // You can replace with an actual image if available
+    alt: "Player Chitinhe Emmanuel",
+  },
+  {
+    name: "Chitura Cleopas",
+    position: "Guard",
+    number: 2,
+    image: kun,
+    alt: "Player Chitura Cleopas",
+  },
+  {
+    name: "Dube Tatenda",
+    position: "Guard",
+    number: 3,
+    image: kun,
+    alt: "Player Dube Tatenda",
+  },
+  {
+    name: "Enock Rosi",
+    position: "Guard",
+    number: 4,
+    image: kun,
+    alt: "Player Enock Rosi",
+  },
+  {
+    name: "Gande Tafadzwa",
+    position: "Centre",
+    number: 5,
+    image: kun,
+    alt: "Player Gande Tafadzwa",
+  },
+  {
+    name: "Gangata Innocent",
+    position: "Guard",
+    number: 6,
+    image: kun,
+    alt: "Player Gangata Innocent",
+  },
+  {
+    name: "Kakurira Munashe",
+    position: "Forward",
+    number: 7,
+    image: kun,
+    alt: "Player Kakurira Munashe",
+  },
+  {
+    name: "Kasuka Lance",
+    position: "Centre",
+    number: 8,
+    image: kun,
+    alt: "Player Kasuka Lance",
+  },
+  {
+    name: "Masuku Duncan",
+    position: "Centre",
+    number: 9,
+    image: kun,
+    alt: "Player Masuku Duncan",
+  },
+  {
+    name: "Mavangira Sean",
+    position: "Guard",
+    number: 10,
+    image: kun,
+    alt: "Player Mavangira Sean",
+  },
+  {
+    name: "Moyo Lancelot",
+    position: "Centre",
+    number: 11,
+    image: kun,
+    alt: "Player Moyo Lancelot",
+  },
+  {
+    name: "Mushitu Daros D",
+    position: "Forward",
+    number: 12,
+    image: kun,
+    alt: "Player Mushitu Daros D",
+  },
+  {
+    name: "Mutongi Fortune Tendai",
+    position: "Guard",
+    number: 13,
+    image: kun,
+    alt: "Player Mutongi Fortune Tendai",
+  },
+  {
+    name: "Ncube Solomon M",
+    position: "Forward",
+    number: 14,
+    image: kun,
+    alt: "Player Ncube Solomon M",
+  },
+  {
+    name: "Ndlovu Daniel Z",
+    position: "Forward",
+    number: 15,
+    image: kun,
+    alt: "Player Ndlovu Daniel Z",
+  },
+  {
+    name: "Nyango Tafara",
+    position: "Forward",
+    number: 16,
+    image: kun,
+    alt: "Player Nyango Tafara",
+  },
+  {
+    name: "Nyathi Malcolm T",
+    position: "Guard",
+    number: 17,
+    image: kun,
+    alt: "Player Nyathi Malcolm T",
+  },
+  {
+    name: "Rosi Kundai",
+    position: "Guard",
+    number: 18,
+    image: kun,
+    alt: "Player Rosi Kundai",
+  },
+  {
+    name: "Sibanda Jadel M",
+    position: "Guard",
+    number: 19,
+    image: kun,
+    alt: "Player Sibanda Jadel M",
+  },
 
 ];
 
@@ -47,12 +180,12 @@ const PlayerCard = ({ player }) => {
 
   return (
     <>
-      <div className="bg-black text-white rounded-lg overflow-hidden shadow-lg m-4 relative">
+      <div className="bg-black text-white rounded-lg overflow-hidden shadow-lg m-4 relative md:h-[50vh]">
         <div className="relative">
           <Image
             src={player.image}
             alt={player.alt}
-            className="w-full h-96 object-cover"
+            className="w-full h-[40vh] object-contain"
             width={384}
             height={384}
           />

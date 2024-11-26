@@ -15,6 +15,12 @@ const joy = localFont({
   variable: '--joy',
 });
 
+const mon = localFont({
+  src: './fonts/Montserrat-VariableFont_wght.ttf',
+  variable: '--mon',
+});
+
+
 export const metadata: Metadata = {
   title: "VicFalls Panthers",
   description: "Victoria Falls Panthers Basketball",
@@ -54,7 +60,7 @@ export default function RootLayout({
     <html lang="en">
 
       <body
-      className={`${joy.variable} ${para.variable}`}
+      className={`${joy.variable} ${para.variable} ${mon.variable}`}
       >
         {children}
       </body>

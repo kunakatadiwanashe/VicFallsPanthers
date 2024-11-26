@@ -7,12 +7,12 @@ import Navbar from "./Navbar";
 
 const Banner = () => {
   return (
-    <div className="min-h-screen overflow-x-hidden bg-cover bg-center">
+    <div className="min-h-screen overflow-x-hidden bg-cover bg-center md:pl-[25px] md:pr-[25px]">
       <Navbar />
 
       <main className="flex flex-col items-center md:flex-row md:items-center md:justify-between p-4 md:p-12 lg:p-0">
-        <div className="w-full md:w-[50%] p-4 md:p-16 pt-10 md:pt-40 lg:pt-4 text-[#118985] text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-2xl">
+        <div className="w-full md:w-[60%] p-4 md:p-16 pt-10 md:pt-40 lg:pt-4 text-[#118985] text-center md:text-left">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-2xl ">
             Victoria Falls Panthers Basketball
           </h1>
           <p className="mb-6 text-lg md:text-xl text-black">
@@ -24,7 +24,7 @@ const Banner = () => {
           </button>
         </div>
 
-        <div className="relative mt-6 lg:mt-0 md:mt-0 w-full md:w-[50%] pr-0 md:pr-28 lg:h[100vh]">
+        <div className="relative mt-6 lg:mt-0 md:mt-0 w-full md:w-[40%] pr-0 md:pr-28 lg:h[100vh]">
           <BannerSlide />
         </div>
       </main>
