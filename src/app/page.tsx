@@ -2,7 +2,6 @@ import React from "react";
 
 
 import Footer from "@/components/footer";
-import PlayerStats2 from '../components/playerStats2';
 import BoysTeam from "@/components/boysTeam";
 import NextMatch from "@/components/nextMatch";
 import Banner from "@/components/Banner";
@@ -23,7 +22,7 @@ export default function Home() {
   <Banner />
   <NextMatch />
   <BoysTeam />
-  <PlayerStats2 />
+  {/* <PlayerStats2 /> */}
   <SocialMedia />
   <Gallery />
   <FunClub />

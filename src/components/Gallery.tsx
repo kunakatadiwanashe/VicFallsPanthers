@@ -21,8 +21,8 @@ const Gallery = () => {
   };
 
   return (
-    <div className="w-full flex p-12">
-      <div className="w-1/3">
+    <div className="w-full flex p-12 h-full">
+      <div className="w-1/3 flex justify-center align-center h-full">
         <h2 className="text-3xl font-bold">Trending Videos & Games</h2>
       </div>
 

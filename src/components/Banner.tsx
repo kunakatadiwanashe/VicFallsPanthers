@@ -11,11 +11,11 @@ const Banner = () => {
       <Navbar />
 
       <main className="flex flex-col items-center md:flex-row md:items-center md:justify-between p-4 md:p-12 lg:p-0">
-        <div className="w-full md:w-[60%] p-4 md:p-16 pt-10 md:pt-40 lg:pt-4 text-[#118985] text-center md:text-left">
+        <div className="w-full md:w-[60%] p-4 md:p-16 pt-10 md:pt-40 lg:pt-10 text-[#118985] text-center md:text-left">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-2xl ">
             Victoria Falls Panthers Basketball
           </h1>
-          <p className="mb-6 text-lg md:text-xl text-black">
+          <p className="mb-6 text-lg md:text-xl md:pb-12 md:pt-8 text-black">
             Premier Amateur Basketball Club in Victoria Falls, Zimbabwe
             affiliated to the Matabeleland North Basketball League.
           </p>
