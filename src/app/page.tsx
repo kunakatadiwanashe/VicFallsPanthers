@@ -18,7 +18,8 @@ import SocialMedia from "@/components/SocialMedia";
 
 export default function Home() {
   return (
-< className="font-joy">
+<div className="font-joy">
+  
   <Banner />
   <NextMatch />
   <BoysTeam />
@@ -28,6 +29,7 @@ export default function Home() {
   <FunClub />
  <GamesPlayed />
 <Footer />
-</>
+
+</div>
   );
 }
