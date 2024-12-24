@@ -1,13 +1,22 @@
 "use client"
-import Image from "next/image";
 
-import kun from "../assets/kun.png";
-import sasha from "../assets/sasha.png";
 
-import { useRouter } from 'next/navigation';
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import { useRouter } from 'next/navigation';
+import kun from '../assets/kun.png'
+import sasha from '../assets/sasha.png'
 
-const PlayerCard = ({ imageSrc, altText, playerName, position, number }) => {
+// Define the props interface
+interface PlayerCardProps {
+    imageSrc: StaticImageData; // Change string to StaticImageData
+    altText: string;
+    playerName: string;
+    position: string;
+    number: number;
+}
+
+const PlayerCard: React.FC<PlayerCardProps> = ({ imageSrc, altText, playerName, position, number }) => {
     return (
         <div className="shadow-2xl text-center h-[45vh] border pb-20 md:pb-0">
             <Image src={imageSrc} alt={altText} className="w-full h-[100%] mb-4 object-contain mb:object-cover" />
@@ -23,7 +32,7 @@ const PlayerCard = ({ imageSrc, altText, playerName, position, number }) => {
 };
 
 const BoysTeam = () => {
-    const router = useRouter(); // Initialize useRouter
+    const router = useRouter();
     const players = [
         {
             name: "Sasha Sasha",
@@ -49,13 +58,13 @@ const BoysTeam = () => {
         {
             name: "Shawn Shawn",
             position: "GUARD",
-            number: 19, // Changed to a unique number
+            number: 19,
             image: kun,
             alt: "Player Shawn Shawn",
         },
         {
             name: "Chitinhe Emmanuel",
-            position: "POINT GUARD", // Consistent naming
+            position: "POINT GUARD",
             number: 5,
             image: sasha,
             alt: "Player Chitinhe Emmanuel",
@@ -82,7 +91,7 @@ const BoysTeam = () => {
                     <PlayerCard 
                         key={index}
                         imageSrc={player.image}
-                        altText={player.alt} // Use the correct alt text
+                        altText={player.alt}
                         playerName={player.name}
                         position={player.position}
                         number={player.number}
@@ -91,12 +100,11 @@ const BoysTeam = () => {
             </div>
 
             <button
-                onClick={() => router .push('/mensTeam')} // Navigate to the new page
+                onClick={() => router.push('/mensTeam')}
                 className="mt-28 font-bold border border-[#118985] text-[#118985] px-4 py-2 hover:bg-[#118985] hover:text-white transition duration-300"
             >
                 See All Squad Members
             </button>
-
         </div>
     );
 };
