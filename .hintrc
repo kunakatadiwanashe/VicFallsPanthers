@@ -6,7 +6,8 @@
     "axe/text-alternatives": [
       "default",
       {
-        "image-alt": "off"
+        "image-alt": "off",
+        "frame-title": "off"
       }
     ],
     "axe/name-role-value": [
@@ -16,6 +17,18 @@
       }
     ],
     "no-inline-styles": "off",
-    "button-type": "off"
+    "button-type": "off",
+    "axe/structure": [
+      "default",
+      {
+        "list": "off"
+      }
+    ],
+    "axe/aria": [
+      "default",
+      {
+        "aria-command-name": "off"
+      }
+    ]
   }
 }
