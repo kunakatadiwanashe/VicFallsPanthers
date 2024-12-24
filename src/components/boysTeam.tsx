@@ -3,9 +3,6 @@ import Image from "next/image";
 
 import kun from "../assets/kun.png";
 import sasha from "../assets/sasha.png";
-import munashe from "../assets/man/munashe.JPG";
-import tk from "../assets/man/tk.JPG";
-
 
 import { useRouter } from 'next/navigation';
 import Link from "next/link";
@@ -33,36 +30,36 @@ const BoysTeam = () => {
             position: "CENTER-FORWARD",
             number: 13,
             image: kun,
-            alt: "Player Bam Adebayo",
-          },
-          {
+            alt: "Player Sasha Sasha",
+        },
+        {
             name: "Tadiwanashe Kunaka",
             position: "CENTER/SF",
             number: 11,
             image: kun,
-            alt: "Player Thomas Bryant",
-          },
-          {
+            alt: "Player Tadiwanashe Kunaka",
+        },
+        {
             name: "Danny Danny",
             position: "GUARD",
             number: 18,
-            image: tk,
-            alt: "Player Alec Burks",
-          },
-          {
+            image: kun,
+            alt: "Player Danny Danny",
+        },
+        {
             name: "Shawn Shawn",
             position: "GUARD",
-            number: 18,
-            image: munashe,
-            alt: "Player Alec Burks",
-          },
-          {
+            number: 19, // Changed to a unique number
+            image: kun,
+            alt: "Player Shawn Shawn",
+        },
+        {
             name: "Chitinhe Emmanuel",
-            position: "Point Guard",
+            position: "POINT GUARD", // Consistent naming
             number: 5,
-            image: sasha, // You can replace with an actual image if available
+            image: sasha,
             alt: "Player Chitinhe Emmanuel",
-          },
+        },
     ];
 
     return (
@@ -72,7 +69,10 @@ const BoysTeam = () => {
                     <i className="fas fa-bolt text-[#118985] text-2xl mr-2"></i>
                     <h1 className="text-xl md:text-2xl font-bold">Mens First Team</h1>
                 </div>
-                <button className="border border-[#118985] text-[#118985] px-4 py-2 hover:bg-[#118985] hover:text-white transition duration-300">
+                <button 
+                    className="border border-[#118985] text-[#118985] px-4 py-2 hover:bg-[#118985] hover:text-white transition duration-300"
+                    aria-label="Navigate to Ladies First Team"
+                >
                     <Link href={"/ladiesTeam"} className="text-xl md:text-2xl font-bold">Ladies First Team</Link>
                 </button>
             </div>
@@ -82,7 +82,7 @@ const BoysTeam = () => {
                     <PlayerCard 
                         key={index}
                         imageSrc={player.image}
-                        altText={`Player ${index + 1}`}
+                        altText={player.alt} // Use the correct alt text
                         playerName={player.name}
                         position={player.position}
                         number={player.number}
@@ -91,8 +91,9 @@ const BoysTeam = () => {
             </div>
 
             <button
-                onClick={() => router.push('/mensTeam')} // Navigate to the new page
-                className="mt-28 font-bold border border-[#118985] text-[#118985] px-4 py-2 hover:bg-[#118985] hover:text-white transition duration-300"  >
+                onClick={() => router .push('/mensTeam')} // Navigate to the new page
+                className="mt-28 font-bold border border-[#118985] text-[#118985] px-4 py-2 hover:bg-[#118985] hover:text-white transition duration-300"
+            >
                 See All Squad Members
             </button>
 
