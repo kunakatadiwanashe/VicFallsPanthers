@@ -53,7 +53,8 @@ export default function Navbar() {
 
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <nav className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-lg md:text-xl font-bold text-black pr-28">
+            
+            <nav className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-lg md:text-xl font-bold text-white pr-28">
               <a href="#" className="hover:text-[#08645d]">
                 Home
               </a>

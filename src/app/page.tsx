@@ -19,15 +19,14 @@ import SocialMedia from "@/components/SocialMedia";
 export default function Home() {
   return (
 <div className="font-joy">
-  
   <Banner />
+  <GamesPlayed />
   <NextMatch />
   <BoysTeam />
   {/* <PlayerStats2 /> */}
   <SocialMedia />
   <Gallery />
   <FunClub />
- <GamesPlayed />
 <Footer />
 
 </div>
